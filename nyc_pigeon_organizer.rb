@@ -3,9 +3,10 @@ require 'pp'
 def nyc_pigeon_organizer(data)
   bird_hash = {}
   data[:color].each do |names|
-    names.each do |name|
+    ```names.each do |name|
       bird_hash[name] = {color: "", gender: "", lives: ""}
-    end
+    end```
+    puts names
   end
   
   pp bird_hash
