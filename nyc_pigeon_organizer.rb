@@ -9,8 +9,6 @@ def nyc_pigeon_organizer(data)
     puts names
   end
   
-  pp bird_hash
-  
 end
 
 #{
