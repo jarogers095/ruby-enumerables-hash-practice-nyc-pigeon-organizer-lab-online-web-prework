@@ -12,7 +12,7 @@ def nyc_pigeon_organizer(data)
   #get colors
   data[:color].each_pair do |color, names|
     names.each do |name|
-      bird_hash[name][:color].push(color)
+      bird_hash[name][:color].push(color.to_s)
     end
   end
   
