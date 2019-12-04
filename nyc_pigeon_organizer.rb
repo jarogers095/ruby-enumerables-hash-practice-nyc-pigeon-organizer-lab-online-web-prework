@@ -2,13 +2,27 @@ require 'pp'
 
 def nyc_pigeon_organizer(data)
   bird_hash = {}
+  
   data[:color].each_pair do |color, names|
     names.each do |name|
-      bird_hash[name] = {color: "", gender: "", lives: ""}
+      bird_hash[name] = {color: [], gender: [], lives: []}
     end
   end
   
+  #get colors
+  data[:color].each_pair do |color, names|
+    names.each do |name|
+      bird_hash[name][:color].push(color)
+    end
+  end
+  
+  #get genders
+  
+  #get location
+  
+  
   pp bird_hash
+  
 end
 
 #{
