@@ -24,7 +24,11 @@ def nyc_pigeon_organizer(data)
   end
   
   #get location
-  
+  data[:lives].each_pair do |location, names|
+    names.each do |name|
+      bird_hash[name][:lives].push(location.to_s)
+    end
+  end
   
   pp bird_hash
   
